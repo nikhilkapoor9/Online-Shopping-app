@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>amazon</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<script src="index.js" defer></script>
+
+<body>
+
+  <div id="nav-bar">
+    <div id="nav-top">
+      <div id="nav-lefticon">
+        <!-- <img src="images/icon.jpg" height="40px" width="40px">  -->
+        <input type="text" placeholder="search..." id="search-bar" onkeyup="searchFun(this)"  maxlength="25">
+
+        <img src="images/cart.png" id="cart" onclick="cart()">
+
+
+
+        <input type="button" value="LOG-IN" id="enter" onclick="enter() ">
+        <!-- <input type="button" value="SIGN-UP" id="enter" onclick="enter()"> -->
+
+        <div id="myform">
+          <form action="action" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>USER NAME</b></label>
+            <input type="text" id="name" placeholder="Enter username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+
+            <button type="button" class="btn" onclick="loginform()">Login</button>
+            <button type="button" class="btn cancel" onclick="closeform()">Close</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+    <div id="nav-bottom">
+      <input type="button" value="mobile" class="k" onclick="filter(this)">
+      <input type="button" value="gifts" class="kk" onclick="filter(this)">
+      <input type="button" value="laptop" onclick="filter(this)">
+      <input type="button" value="home" onclick="home()">
+      <input type="button" value="earphone" onclick="filter(this)">
+
+      <input type="button" value="CLOTHES" onclick="filter(this)">
+      <!-- <input type="button" value="CUSTOEMER-SERVICE" onclick="filter(this)"> -->
+
+    </div>
+  </div>
+  <form action="action" id="cartitems">
+    <div id="carttextcontent">
+      <h1> cart</h1>
+      <!-- <input type="text" id="itemname"> -->
+        <span></span>
+
+      <!-- <input type="label" value="TOTAL PRICE OF ITEMS:"> <br> -->
+      <!-- <input type="text" id="totalvalue"> <br> -->
+    </div>
+
+  </form>
+  <div id="formsample"></div>
+  <h1></h1>
+
+  <main class="jsimg"></main>
+  <div id="outdiv"></div>
+</body>
+
+</html>

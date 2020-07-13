@@ -1,0 +1,81 @@
+#nav-bar
+{
+ background-color: blueviolet;   
+}
+#search-bar
+{
+    height: 30px;
+    width: 700px;
+}
+
+.product{
+    display: inline-block;
+    margin: 10px;
+}
+
+#nav-bottom
+{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+     color: white;
+     justify-content: space-around;
+}
+#cart{
+    position: relative;
+    right: -150px;
+    
+}
+#enter
+{
+    position: relative;
+    right: -200px;
+}
+/* #lap1,#lap2,#jacket,#earphone
+{
+    
+    padding: 8%;
+} */
+/* }
+#lap2
+{
+    padding: 8%;
+} */
+
+
+#myform
+{
+    /* display: none; */
+    display: none;
+    background: yellow;
+    width: max-content;
+    padding: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.displayimage{
+    width: 250px;
+}
+
+#cartitems{
+    display: none;
+    background-color: blueviolet;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+
+    border: 5px solid black;
+}
+#carttextcontent
+{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.product:hover
+{
+    transform: scale(1.5);
+    color: blue;
+}
